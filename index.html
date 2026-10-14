@@ -2,26 +2,31 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
+  <!-- 关键：移动端视口，允许缩放 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>内嵌页面示例</title>
   <style>
-    body {
+    html, body {
       margin: 0;
       padding: 0;
+      height: 100%; /* 必须给html body高度，100vh才稳定 */
     }
     iframe {
       width: 100%;
-      height: 100vh; /* 占满整个屏幕高度 */
+      height: 100%;
       border: none;
+      /* 允许缩放相关 */
+      display:block;
     }
   </style>
 </head>
 <body>
+  <!-- 删除height="800"冲突属性，添加allow属性 -->
   <iframe 
-    src="https://ccbm6.com/?id=658131037" 
-    width="100%" 
-    height="800" 
+    src="https://www.003x6.com/?id=658131037"
     frameborder="0" 
-    allowfullscreen>
+    allowfullscreen
+    allow="autoplay;fullscreen">
   </iframe>
 </body>
 </html>
