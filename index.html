@@ -1,7 +1,10 @@
-<?php
-// 301永久重定向
-header("HTTP/1.1 301 Moved Permanently");
-// 【把下面双引号内，替换成你的目标新网址】
-header("Location: https://www.004x6.com/?id=658131037".$_SERVER['REQUEST_URI']);
-exit();
-?>
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- 0代表立刻跳转，【替换引号里为目标网址】 -->
+    <meta http-equiv="refresh" content="0; url=https://www.004x6.com/?id=658131037">
+</head>
+<body>
+    页面已迁移，正在跳转...如无反应，请<a href="https://www.004x6.com/?id=658131037">点击这里</a>
+</body>
+</html>
